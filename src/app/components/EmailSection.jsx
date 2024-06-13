@@ -39,17 +39,18 @@ const EmailSection = () => {
 
 
   return (
-		 <section id="contact" className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 flex">
+		 <section id="contact" className="grid md:grid-cols-2 my-12 md:my-12 py-18 gap-4 flex-col min-h-screen">
+      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
   <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
 
   <section className="flex flex-col items-center justify-center">
-    <div className="d">
+    <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
       <h2 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl lg:leading-normal font-extrabold">
         <span className="text-transparent bg-clip-text bg-gradient-to-br from-primary-500 to-secondary-500 ">
           Contato
         </span>
       </h2>
-      <p className="text-[#ADB7BE] mb-4 max-w-md">
+      <p className="text-[#ADB7BE] lg:text-lg">
         Atualmente estamos em busca de novas oportunidades, 
         nossa caixa de entrada está sempre aberta. Se você tiver 
         alguma dúvida ou apenas quiser dizer oi, farei o possível 
@@ -116,6 +117,7 @@ const EmailSection = () => {
       )}
     </div>
   </section>
+  </div>
 </section>
   );
 };
