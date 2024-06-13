@@ -8,7 +8,7 @@ const TAB_DATA = [
     title: "skills",
     id: "skills",
     content: (
-      <ul className="list-disc pl-2">
+      <ul className="list-disc text-[#ADB7BE] pl-2">
         <li>Node.js</li>
         <li>Next.js</li>
         <li>MySQL</li>
@@ -28,7 +28,7 @@ const TAB_DATA = [
     title: "education",
     id: "education",
     content: (
-      <ul className="list-disc pl-2">
+      <ul className="list-disc text-[#ADB7BE] pl-2">
         <li>Bacharelado Sistemas de Informação</li>
         <li>Universidade Positivo 2022-2025</li>
         <br></br>
@@ -41,7 +41,7 @@ const TAB_DATA = [
     title: "Certifications",
     id: "certifications",
     content: (
-      <ul className="list-disc pl-2">
+      <ul className="list-disc text-[#ADB7BE] pl-2">
         <li>Sem certificações</li>
         {/*
         <li>AWS Cloud Practitioner</li>
@@ -72,7 +72,7 @@ const AboutSection = () => {
 
           <h2 className="text-4xl font-bold text-white mb-4">Sobre Mim</h2>
 
-          <p className="text-base lg:text-lg">
+          <p className="text-base text-[#ADB7BE] lg:text-lg">
           Discente de Sistemas de Informação, atualmente no terceiro ano do curso. 
           Minha jornada acadêmica tem sido enriquecida com experiências em linguagens programação 
           juntamente com conceitos de S.O.L.I.D e Design Patterns. Minha habilidade em aprender com facilidade 
