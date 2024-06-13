@@ -19,6 +19,9 @@ module.exports = {
     ...colors,
     primary: colors.blue,
     secondary: colors.yellow,
+    tertiary: {//propiedades da cor de fundo do site
+      DEFAULT: 'rgb(12 12 12)',
+    },
   },
   },
   plugins: [],

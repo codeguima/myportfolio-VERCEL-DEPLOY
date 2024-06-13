@@ -1,6 +1,8 @@
 "use client";
 import React, { useState } from "react";
+import {Inter} from "next/font/google";
 
+const inter = Inter({subsets: ["latin"]});
 const EmailSection = () => {
 
   const [emailSubmitted, setEmailSubmitted] = useState(false);
@@ -39,13 +41,13 @@ const EmailSection = () => {
 
 
   return (
-		 <section id="contact" className="grid md:grid-cols-2 my-12 md:my-12 py-18 gap-4 flex-col min-h-screen">
-  <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
-
-  <section className="flex flex-col items-center justify-center">
-    <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
+   
+    <section id="contact" className="min-h-screen bg-tertiary py-18 sm:py-16 xl:px-16">
+  <div className="container mx-auto md:grid md:grid-cols-2 gap-8 xl:gap-16 items-center">
+    {/* Texto do lado esquerdo */}
+    <div className="flex flex-col mt-12 md:mt-0 text-left h-full px-4 sm:px-8">
       <h2 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl lg:leading-normal font-extrabold">
-        <span className="text-transparent bg-clip-text bg-gradient-to-br from-primary-500 to-secondary-500 ">
+        <span className="text-transparent bg-clip-text bg-gradient-to-br from-primary-500 to-secondary-500">
           Contato
         </span>
       </h2>
@@ -55,68 +57,72 @@ const EmailSection = () => {
         alguma dúvida ou apenas quiser dizer oi, farei o possível 
         para entrar em contato com você!
       </p>
-      <br/>
+      <br />
     </div>
-  </section>
-
-  <section className="flex items-center justify-center">
-    <div className="w-96"> {/* Definindo a largura máxima do formulário */}
-      {emailSubmitted ? (
-        <p className="text-green-500 text-sm mt-2">
-          Email enviado com Sucesso!!
-        </p>
-      ) : (
-        <form className="flex flex-col" onSubmit={handleSubmit}>
-          <div className="mb-6">
-            <label htmlFor="email" className="text-white block mb-2 text-sm font-medium">
-              Seu email
-            </label>
-            <input 
-              name="email"
-              type="email"
-              id="email"
-              required
-              className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-              placeholder="endereço@provedor.com"
-            />
-          </div>
-          <div className="mb-6">
-            <label htmlFor="name" className="text-white block text-sm mb-2 font-medium">
-              Seu nome
-            </label>
-            <input
-              name="name"
-              type="text"
-              id="name"
-              required
-              className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-              placeholder="Escreva seu Nome"
-            />
-          </div>
-          <div className="mb-6">
-            <label htmlFor="message" className="text-white block text-sm mb-2 font-medium">
-              Mensagem
-            </label>
-            <textarea
-              name="message"
-              id="message"
-              className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-              style={{ width: "100%" }} 
-              placeholder="Escreva sua mensagem"
-            />
-          </div>
-          <button 
-            type="submit" 
-            className="px-1 inline-block py-1 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3">
-            <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-              Enviar Mensagem
-            </span>
-          </button>
-        </form>
-      )}
+    
+    {/* Formulário do lado direito */}
+    <div className="flex items-center justify-center px-4 sm:px-8">
+      <div className="w-full max-w-lg">
+        {emailSubmitted ? (
+          <p className="text-green-500 text-sm mt-2">
+            Email enviado com Sucesso!!
+          </p>
+        ) : (
+          <form className="flex flex-col p-6 rounded-lg shadow-md w-full" onSubmit={handleSubmit}>
+            <div className="mb-6">
+              <label htmlFor="email" className="text-white block mb-2 text-sm font-medium">
+                Seu email
+              </label>
+              <input 
+                name="email"
+                type="email"
+                id="email"
+                required
+                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                placeholder="endereço@provedor.com"
+              />
+            </div>
+            <div className="mb-6">
+              <label htmlFor="name" className="text-white block text-sm mb-2 font-medium">
+                Seu nome
+              </label>
+              <input
+                name="name"
+                type="text"
+                id="name"
+                required
+                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                placeholder="Escreva seu Nome"
+              />
+            </div>
+            <div className="mb-6">
+              <label htmlFor="message" className="text-white block text-sm mb-2 font-medium">
+                Mensagem
+              </label>
+              <textarea
+                name="message"
+                id="message"
+                required
+                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                placeholder="Escreva sua mensagem"
+              />
+            </div>
+            <button 
+              type="submit" 
+              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3">
+              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+                Enviar Mensagem
+              </span>
+            </button>
+          </form>
+        )}
+      </div>
     </div>
-  </section>
+  </div>
 </section>
+
+  
+
   );
 };
 
