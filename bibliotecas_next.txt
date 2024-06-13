@@ -1,0 +1,9 @@
+npx create-next-app@latest
+
+npm install react-type-animation
+npm install react-animated-numbers
+npm install @heroicons/react
+npm install nodemailer 
+npm install dotenv*
+npm install resend
+npm install express
