@@ -52,8 +52,8 @@ const HeroSection = () => {
               repeat={Infinity}
             />
           </h1>
-          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">Olá e seja bem-vindo ao meu portfólio! Estou feliz em compartilhar 
-            um pouco da minha jornada profissional e alguns dos projetos que desenvolvi na área de tecnologia. 
+          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">Seja bem-vindo ao meu portfólio! Estou feliz em compartilhar 
+            um pouco da minha jornada profissional e alguns dos projetos que desenvolvi e estão em andamento na área de tecnologia. 
             Mal posso esperar para explorar possíveis colaborações juntos!
           </p>
           <div>
