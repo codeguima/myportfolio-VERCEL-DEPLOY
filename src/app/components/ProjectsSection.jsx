@@ -14,16 +14,16 @@ const projectsData = [
     gitUrl: "/",
     previewUrl: "/",
   },
-  /*
+  
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
-    image: "/images/projects/2.png",
+    title: "Rede Social Portfolios Website",
+    description: "Projeto de site de cadastro de portfolios de programadores, realizado com React, Next e Tailwind navegação por token.  ",
+    image: "/images/projects/redesocial.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },*/
+    gitUrl: "https://github.com/jguimaraesdev/nextjs-basic-routes-response",
+    previewUrl: "https://codedevsocials.netlify.app/",
+  },
   {
     id: 3,
     title: "E-commerce Aplicação",
