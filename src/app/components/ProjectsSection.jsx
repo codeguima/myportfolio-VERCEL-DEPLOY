@@ -21,7 +21,7 @@ const projectsData = [
     description: "Projeto de site de cadastro de portfolios de programadores, realizado com React, Next e Tailwind navegação por token.  ",
     image: "/images/projects/redesocial.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/jguimaraesdev/nextjs-basic-routes-response",
+    gitUrl: "https://github.com/jguimaraesdev/next-typescript-zustand-response",
     previewUrl: "https://codedevsocials.netlify.app/",
   },
   {
@@ -49,8 +49,8 @@ const projectsData = [
     description: "Operações de estacionamento, CRUD realizado com .Net Framework + SQLite no back, Angular-CLI + Bootstrap no front ",
     image: "/images/projects/estacionamento.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/jguimaraesdev/frontestacionamento",
-    previewUrl: "https://jguimaraesdev.github.io/frontestacionamento/",
+    gitUrl: "https://github.com/jguimaraesdev/frontend-angular-cli-bootstrap-typescript",
+    previewUrl: "https://jguimaraesdev.github.io/frontend-angular-cli-bootstrap-typescript/",
   },
   {
     id: 6,
