@@ -28,7 +28,6 @@ const EmailSection = () => {
       });
   
       if (response.ok) {
-        console.log("Mensagem Enviada.");
         setEmailSubmitted(true); // Atualiza o estado emailSubmitted para true
       } else {
         console.error("Falha ao enviar mensagem:", response.statusText);
