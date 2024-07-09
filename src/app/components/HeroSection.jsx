@@ -38,11 +38,21 @@ const HeroSection = () => {
                 1000,
                 "Jhonny G.",
                 1000,
-                "Developer",
+                "Desenvolvedor",
                 1000,
                 "Full Stack | IoT",
                 1000,
                 "Bem-Vindo!",
+                1000,
+                "I am",
+                1000,
+                "Jhonny G.",
+                1000,
+                "Developer",
+                1000,
+                "Full Stack | IoT",
+                1000,
+                "Welcome!",
                 1000,
                 
               ]}
@@ -55,6 +65,11 @@ const HeroSection = () => {
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">Seja bem-vindo ao meu portfólio! Estou feliz em compartilhar 
             um pouco da minha jornada profissional e alguns dos projetos que desenvolvi e estão em andamento na área de tecnologia. 
             Mal posso esperar para explorar possíveis colaborações juntos!
+          </p>
+          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
+          Welcome to my portfolio! I'm happy to share 
+            a little about my professional journey and some of the projects I have developed and are underway in the technology area. 
+            I can't wait to explore possible collaborations together!
           </p>
           <div>
             <Link
