@@ -21,7 +21,7 @@ const projectsData = [
     description: "Projeto de site de cadastro de portfolios de programadores, realizado com React, Next e Tailwind navegação por token.  ",
     image: "/images/projects/redesocial.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/jguimaraesdev/next-typescript-zustand-response",
+    gitUrl: "https://github.com/jhonnycodedev/next-typescript-zustand-response",
     previewUrl: "https://codedevsocials.netlify.app/",
   },
   {
@@ -49,8 +49,8 @@ const projectsData = [
     description: "Operações de estacionamento, CRUD realizado com .Net Framework + SQLite no back, Angular-CLI + Bootstrap no front ",
     image: "/images/projects/estacionamento.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/jguimaraesdev/frontend-angular-cli-bootstrap-typescript",
-    previewUrl: "https://jguimaraesdev.github.io/frontend-angular-cli-bootstrap-typescript/",
+    gitUrl: "https://github.com/jhonnycodedev/frontend-angular-cli-bootstrap-typescript",
+    previewUrl: "https://jhonnycodedev.github.io/frontend-angular-cli-bootstrap-typescript/",
   },
   {
     id: 6,
@@ -58,8 +58,8 @@ const projectsData = [
     description: "Projeto bem básico feito em sala de aula apenas para testar as ferramentas de Web, PHP, CSS, HTML5.",
     image: "/images/projects/outlet.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/jguimaraesdev/oculosoutlet",
-    previewUrl: "https://jguimaraesdev.github.io/oculosoutlet/",
+    gitUrl: "https://github.com/jhonnycodedev/oculosoutlet",
+    previewUrl: "https://jhonnycodedev.github.io/oculosoutlet/",
   },
   {
     id: 7,
@@ -67,7 +67,7 @@ const projectsData = [
     description: "Projeto bem básico feito em sala de aula com material reciclável e Módulo ESP32 + MycroPython",
     image: "/images/projects/9.jpg",
     tag: ["All", "IoT"],
-    gitUrl: "https://github.com/jguimaraesdev/alimentadorautomatizadoIOT",
+    gitUrl: "https://github.com/jhonnycodedev/alimentadorautomatizadoIOT",
     previewUrl: "/images/projects/9.jpg",
   },
 

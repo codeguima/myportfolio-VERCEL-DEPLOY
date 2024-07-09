@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className="footer border z-10 border-t-[#33353F] border-l-transparent border-r-transparent text-white">
       <div className="container p-12 flex flex-col sm:flex-row justify-between items-center">
         <div className="socials flex flex-row mb-4 sm:mb-0 sm:mr-8">
-          <Link href="https://github.com/jguimaraesdev">
+          <Link href="https://github.com/jhonnycodedev">
             <Image src={GithubIcon} alt="Github Icon" width={30} height={30} />
           </Link>
           <Link href="https://br.linkedin.com/in/jhonny-guimaraes">
