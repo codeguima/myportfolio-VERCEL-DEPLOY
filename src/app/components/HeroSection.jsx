@@ -32,15 +32,15 @@ const HeroSection = () => {
             <br></br>
             <TypeAnimation
               sequence={[
-                //"Hello",
-                //1000,
+                "Hello",
+                1000,
                 "Eu sou",
                 1000,
-                "Jhonny G.",
+                "Jhonny Guimarães",
                 1000,
                 "Desenvolvedor",
                 1000,
-                "Full-Stack / IoT",
+                "Full Stack | IoT",
                 1000,
                 "Bem-Vindo!",
                 1000,
