@@ -45,7 +45,7 @@ const projectsData = [
   },*/
   {
     id: 5,
-    title: "Full-stack Totem Digital",
+    title: "Full Stack Totem Digital",
     description: "Operações de estacionamento, CRUD realizado com .Net Framework + SQLite no back, Angular-CLI + Bootstrap no front ",
     image: "/images/projects/estacionamento.png",
     tag: ["All", "Web"],
