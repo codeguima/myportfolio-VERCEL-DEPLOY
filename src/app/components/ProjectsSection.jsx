@@ -49,7 +49,7 @@ const projectsData = [
     description: "Operações de estacionamento, CRUD realizado com .Net Framework + SQLite no back, Angular-CLI + Bootstrap no front ",
     image: "/images/projects/estacionamento.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/jhonnycodedev/frontend-angular-cli-bootstrap-typescript",
+    gitUrl: "https://github.com/jhonnycodedev/web-Api-estacionamento",
     previewUrl: "https://jhonnycodedev.github.io/frontend-angular-cli-bootstrap-typescript/",
   },
   {
