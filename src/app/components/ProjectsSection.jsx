@@ -21,7 +21,7 @@ const projectsData = [
     description: "Projeto de site de cadastro de portfolios de programadores, realizado com React, Next e Tailwind navegação por token.  ",
     image: "/images/projects/redesocial.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/jhonnycodedev/node-typescript-next-mongodb",
+    gitUrl: "https://github.com/jhonnycodedev/rede-social-portfolios-react",
     previewUrl: "https://codedevsocials.netlify.app/",
   },
   {
@@ -58,8 +58,8 @@ const projectsData = [
     description: "Projeto bem básico feito em sala de aula apenas para testar as ferramentas de Web, PHP, CSS, HTML5.",
     image: "/images/projects/outlet.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/jhonnycodedev/html-css-php",
-    previewUrl: "https://jhonnycodedev.github.io/html-css-php/",
+    gitUrl: "https://github.com/jhonnycodedev/oculos-outlet-basic-site",
+    previewUrl: "https://jhonnycodedev.github.io/oculos-outlet-basic-site/",
   },
   {
     id: 7,
