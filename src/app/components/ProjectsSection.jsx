@@ -21,7 +21,7 @@ const projectsData = [
     description: "Projeto de site de cadastro de portfolios de programadores, realizado com React, Next e Tailwind navegação por token.  ",
     image: "/images/projects/redesocial.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/jhonnycodedev/next-typescript-zustand-response",
+    gitUrl: "https://github.com/jhonnycodedev/node-typescript-next-mongodb",
     previewUrl: "https://codedevsocials.netlify.app/",
   },
   {
