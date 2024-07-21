@@ -21,8 +21,8 @@ const projectsData = [
     description: "Projeto de site de cadastro de portfolios de programadores, realizado com React, Next e Tailwind navegação por token.  ",
     image: "/images/projects/redesocial.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/jhonnycodedev/next-typescript-zustand-response",
-    previewUrl: "https://codedevsocials.netlify.app/",
+    gitUrl: "https://github.com/jhonnycodedev/rede-social-portfolios-react",
+    previewUrl: "https://www.codedevs.com.br/",
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ const projectsData = [
     image: "/images/projects/8.jpeg",
     tag: ["All", "Web"],
     gitUrl: "/",
-    previewUrl: "/images/projects/8.jpeg",
+    previewUrl: "https://www.daeatacado.com.br/",
   },
   /*
   {
