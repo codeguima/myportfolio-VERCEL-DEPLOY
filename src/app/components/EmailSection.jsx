@@ -1,35 +1,39 @@
 "use client";
-import React, { useState } from "react";
-import { Inter } from "next/font/google";
+
+import { useState } from "react";
 import emailjs from '@emailjs/browser';
+import React from "react";
 
-const inter = Inter({ subsets: ["latin"] });
-const EmailSection = () => {
-
+function EmailSection() {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
   const [emailSubmitted, setEmailSubmitted] = useState(false);
+
+  // Inicialize o EmailJS com a chave pública
+  emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const { email, name, message } = e.target;
-
-    const data = {
-      from_name: name.value,
-      from_email: email.value,
-      message: message.value,
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      message: message,
     };
 
     try {
       const response = await emailjs.send(
-        process.env.EMAILJS_SERVICE_ID,
-        process.env.EMAILJS_TEMPLATE_ID,
-        data,
-        process.env.EMAILJS_USER_ID
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        templateParams
       );
 
-      if (response.status === 200) {
-        setEmailSubmitted(true); // Atualiza o estado emailSubmitted para true
-        e.target.reset();// Limpa os campos do formulário
+      if (response.status === 200 || response.text === "OK") {
+        setEmailSubmitted(true);
+        setName('');
+        setEmail('');
+        setMessage('');
       } else {
         console.error("Falha ao enviar mensagem:", response.text);
       }
@@ -48,8 +52,7 @@ const EmailSection = () => {
             </span>
           </h2>
           <p className="text-[#ADB7BE] lg:text-lg">
-            Atualmente estamos em busca de novas oportunidades, 
-            nossa caixa de entrada está sempre aberta. Se você tiver 
+            Nossa caixa de entrada está sempre aberta. Se você tiver 
             alguma dúvida ou apenas quiser dizer oi, farei o possível 
             para entrar em contato com você!
           </p>
@@ -60,7 +63,7 @@ const EmailSection = () => {
           <div className="w-full max-w-lg">
             {emailSubmitted ? (
               <p className="text-green-500 text-sm mt-2">
-                Email enviado com Sucesso!!
+                Email enviado com sucesso!
               </p>
             ) : (
               <form className="flex flex-col p-6 rounded-lg shadow-md w-full" onSubmit={handleSubmit}>
@@ -72,6 +75,8 @@ const EmailSection = () => {
                     name="email"
                     type="email"
                     id="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                     required
                     className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                     placeholder="endereço@provedor.com"
@@ -85,6 +90,8 @@ const EmailSection = () => {
                     name="name"
                     type="text"
                     id="name"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
                     required
                     className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                     placeholder="Escreva seu Nome"
@@ -97,6 +104,8 @@ const EmailSection = () => {
                   <textarea
                     name="message"
                     id="message"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
                     required
                     className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                     placeholder="Escreva sua mensagem"
@@ -116,6 +125,6 @@ const EmailSection = () => {
       </div>
     </section>
   );
-};
+}
 
 export default EmailSection;
