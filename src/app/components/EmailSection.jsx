@@ -1,17 +1,13 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState } from "react";
 import emailjs from '@emailjs/browser';
-import React from "react";
 
-function EmailSection() {
+const EmailSection = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [emailSubmitted, setEmailSubmitted] = useState(false);
-
-  // Inicialize o EmailJS com a chave pública
-  emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -22,24 +18,21 @@ function EmailSection() {
       message: message,
     };
 
-    try {
-      const response = await emailjs.send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-        templateParams
-      );
+    emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY);
 
-      if (response.status === 200 || response.text === "OK") {
-        setEmailSubmitted(true);
-        setName('');
-        setEmail('');
-        setMessage('');
-      } else {
-        console.error("Falha ao enviar mensagem:", response.text);
-      }
-    } catch (error) {
-      console.error("Erro ao enviar mensagem:", error);
-    }
+    emailjs.send(
+      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+      templateParams
+    ).then((response) => {
+      console.log('Email successfully sent', response.status, response.text);
+      setName('');
+      setEmail('');
+      setMessage('');
+      setEmailSubmitted(true);
+    }, (error) => {
+      console.log("Error sending email", error);
+    });
   };
 
   return (
@@ -52,9 +45,7 @@ function EmailSection() {
             </span>
           </h2>
           <p className="text-[#ADB7BE] lg:text-lg">
-            Nossa caixa de entrada está sempre aberta. Se você tiver 
-            alguma dúvida ou apenas quiser dizer oi, farei o possível 
-            para entrar em contato com você!
+            Nossa caixa de entrada está sempre aberta. Se você tiver alguma dúvida ou apenas quiser dizer oi, farei o possível para entrar em contato com você!
           </p>
           <br />
         </div>
@@ -74,7 +65,6 @@ function EmailSection() {
                   <input 
                     name="email"
                     type="email"
-                    id="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     required
@@ -89,7 +79,6 @@ function EmailSection() {
                   <input
                     name="name"
                     type="text"
-                    id="name"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     required
@@ -103,7 +92,6 @@ function EmailSection() {
                   </label>
                   <textarea
                     name="message"
-                    id="message"
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     required
@@ -125,6 +113,6 @@ function EmailSection() {
       </div>
     </section>
   );
-}
+};
 
 export default EmailSection;
