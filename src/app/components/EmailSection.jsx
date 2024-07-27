@@ -13,8 +13,8 @@ const EmailSection = () => {
     e.preventDefault();
 
     const templateParams = {
-      from_name: name,
-      from_email: email,
+      name: name,
+      email: email,
       message: message,
     };
 
