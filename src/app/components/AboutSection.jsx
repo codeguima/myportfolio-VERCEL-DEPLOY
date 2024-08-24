@@ -42,7 +42,6 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc text-[#ADB7BE] pl-2">
-        <li>Sem certificações</li>
         <li>Curso de extensão Industria 4.0 - PUCRS</li>
         <li>Learning with Python - Enap</li>
         <li>Power BI - Fundação Bradesco</li>
