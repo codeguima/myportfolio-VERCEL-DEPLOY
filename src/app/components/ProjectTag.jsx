@@ -6,10 +6,13 @@ const ProjectTag = ({ name, onClick, isSelected }) => {
     : "text-[#ADB7BE] border-slate-600 hover:border-white";
   return (
     <button
-      className={`${buttonStyles} rounded-full border-2 px-6 py-3 text-xl cursor-pointer`}
+      className={`${buttonStyles} px-1 py-1 rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3`}
       onClick={() => onClick(name)}
     >
+      <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
       {name}
+      </span>
+     
     </button>
   );
 };

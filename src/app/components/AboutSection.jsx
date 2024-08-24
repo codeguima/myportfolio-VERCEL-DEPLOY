@@ -33,7 +33,7 @@ const TAB_DATA = [
         <li>Universidade Positivo 2022-2025</li>
         <br></br>
         <li>Análise e Desenvolvimento de Sistemas</li>
-        <li>Pontificia Universidade Católica 2021-2022</li>
+        <li>Pontificia Universidade Católica 2020-2022</li>
       </ul>
     ),
   },
@@ -43,10 +43,11 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc text-[#ADB7BE] pl-2">
         <li>Sem certificações</li>
-        {/*
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
-      */}
+        <li>Curso de extensão Industria 4.0 - PUCRS</li>
+        <li>Learning with Python - Enap</li>
+        <li>Power BI - Fundação Bradesco</li>
+        <li>IA - Fundação Bradesco</li>
+        <li>UX/UI Design - Cubos Academy</li>
       </ul>
     ),
   },

@@ -4,13 +4,13 @@ import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import foto from "../../../public/images/hero-image.png";
+import foto from "../../../public/images/IMG-2.jpg";
 const HeroSection = () => {
 
   //Configurações para exportar curriculm
   const handleDownloadClick = () => {
     // Substitua 'caminho/do/arquivo.pdf' pelo caminho do seu arquivo a ser baixado
-    const filePath = '/JhonnyGuimaraes_developer.pdf';
+    const filePath = '/Profile.pdf';
 
     window.open(filePath, '_blank');
   };
@@ -65,7 +65,7 @@ const HeroSection = () => {
             <Link
               href="/#contact"
               //Aqui configura-se a cor do botão para contate-me
-              className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4  bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-primary-500 text-white"
+              className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4  bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-primary-500 text-black"
             >
               Contate-Me
             </Link>
