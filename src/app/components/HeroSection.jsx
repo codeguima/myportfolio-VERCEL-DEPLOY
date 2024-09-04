@@ -10,7 +10,7 @@ const HeroSection = () => {
   //Configurações para exportar curriculm
   const handleDownloadClick = () => {
     // Substitua 'caminho/do/arquivo.pdf' pelo caminho do seu arquivo a ser baixado
-    const filePath = '/Profile.pdf';
+    const filePath = '/';
 
     window.open(filePath, '_blank');
   };
