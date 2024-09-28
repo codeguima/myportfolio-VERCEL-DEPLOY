@@ -9,18 +9,16 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc text-[#ADB7BE] pl-2">
+        <li>React</li>
         <li>Node.js</li>
         <li>Next.js</li>
-        <li>MySQL</li>
+        <li>SQL & Mongo</li>
         <li>Sequelize</li>
         <li>JavaScript</li>
-        <li>React</li>
+        <li>TypeScript</li>
         <li>Java</li>
         <li>Python</li>
-        <li>Micro Python</li>
-        <li>Angular Cli</li>
-        <li>Net.Framework</li>
-        <li>Bootstrap</li>
+        <li>Micro Python(iot)</li>
       </ul>
     ),
   },
@@ -47,6 +45,9 @@ const TAB_DATA = [
         <li>Power BI - Fundação Bradesco</li>
         <li>IA - Fundação Bradesco</li>
         <li>UX/UI Design - Cubos Academy</li>
+        <li>Banco de Dados - Ada Tech</li>
+        <li>Node.js - Ada Tech</li>
+        <li>Git e Github - LinkedIn Cursos</li>
       </ul>
     ),
   },
@@ -73,7 +74,7 @@ const AboutSection = () => {
           <h2 className="text-4xl font-bold text-white mb-4">Sobre Mim</h2>
 
           <p className="text-base text-[#ADB7BE] lg:text-lg">
-          Discente de Sistemas de Informação, atualmente no terceiro ano do curso. 
+          Discente de Sistemas de Informação, atualmente no 6 semestre do curso. 
           Minha jornada acadêmica tem sido enriquecida com experiências em linguagens programação 
           juntamente com conceitos de S.O.L.I.D e Design Patterns. Minha habilidade em aprender com facilidade 
           e minha resiliência diante de desafios têm fortalecido meu progresso no meus estudos, 

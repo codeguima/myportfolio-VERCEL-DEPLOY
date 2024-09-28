@@ -33,16 +33,16 @@ const projectsData = [
     gitUrl: "/",
     previewUrl: "https://www.daeatacado.com.br/",
   },
-  /*
+  
   {
     id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
-    image: "/images/projects/4.png",
+    title: "Now Barber Application",
+    description: "Projeto de um localizador de Barbearias para clientes, realizado com Kotlin, Android Studio",
+    image: "/images/projects/logo3.jpg",
     tag: ["All", "Mobile"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/jhonnycodedev/AppBarber",
     previewUrl: "/",
-  },*/
+  },
   {
     id: 5,
     title: "Full Stack Totem Digital",
