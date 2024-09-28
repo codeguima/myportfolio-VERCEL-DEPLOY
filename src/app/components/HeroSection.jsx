@@ -40,7 +40,7 @@ const HeroSection = () => {
                 1000,
                 "Desenvolvedor",
                 1000,
-                "Full Stack | IoT",
+                "Full Stack | IoT | Web | Mobile",
                 1000,
                 "I am",
                 1000,
@@ -48,7 +48,7 @@ const HeroSection = () => {
                 1000,
                 "Developer",
                 1000,
-                "Full Stack | IoT",
+                "Full Stack | IoT | Web | Mobile",
                 1000,
               ]}
               wrapper="span"

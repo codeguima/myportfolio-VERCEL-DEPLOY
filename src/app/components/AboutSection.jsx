@@ -17,6 +17,7 @@ const TAB_DATA = [
         <li>JavaScript</li>
         <li>TypeScript</li>
         <li>Java</li>
+        <li>Kotlin</li>
         <li>Python</li>
         <li>Micro Python(iot)</li>
       </ul>
