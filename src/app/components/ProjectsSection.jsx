@@ -22,7 +22,7 @@ const projectsData = [
     image: "/images/projects/redesocial.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/jhonnycodedev/next-typescript-zustand-response",
-    previewUrl: "https://codedevsocials.netlify.app/",
+    previewUrl: "http://www.codedevs.com.br",
   },
   {
     id: 3,
