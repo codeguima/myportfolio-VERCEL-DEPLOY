@@ -37,7 +37,7 @@ const projectsData = [
     id: 4,
     title: "Now Barber Application",
     description: "Projeto de um localizador de Barbearias para clientes, realizado com Kotlin, Android Studio",
-    image: "/public/images/logo3.jpg",
+    image: "/public/images/barber.png",
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/jhonnycodedev/AppBarber",
     previewUrl: "/",
