@@ -45,7 +45,7 @@ const EmailSection = () => {
             </span>
           </h2>
           <p className="text-[#ADB7BE] lg:text-lg">
-            Nossa caixa de entrada está sempre aberta. Se você tiver alguma dúvida ou apenas quiser dizer oi, farei o possível para entrar em contato com você!
+            Minha caixa de entrada está sempre aberta. Se você tiver alguma dúvida ou apenas quiser dizer oi, farei o possível para entrar em contato com você!
           </p>
           <br />
         </div>
