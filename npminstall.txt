@@ -12,3 +12,4 @@ npm install tailwindcss
 npm install axios
 npm install zustand
 npm install sharp
+npm install emailjs
