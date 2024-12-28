@@ -30,9 +30,9 @@ const TAB_DATA = [
       <ul className="list-disc text-[#ADB7BE] pl-2">
         <li>Bacharelado Sistemas de Informação</li>
         <li>Universidade Positivo 2022-2025</li>
-        //<br></br>
-        //<li>Análise e Desenvolvimento de Sistemas</li>
-        //<li>Pontificia Universidade Católica 2020-2022</li>
+        <br></br>
+        <li>Análise e Desenvolvimento de Sistemas</li>
+        <li>Pontificia Universidade Católica 2020-2022</li>
       </ul>
     ),
   },
@@ -68,7 +68,7 @@ const AboutSection = () => {
     <section className="text-white" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
 
-        <Image src={foto} width={500} height={500} />
+        <Image src={foto} width={500} height={500} alt="" />
 
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
 
