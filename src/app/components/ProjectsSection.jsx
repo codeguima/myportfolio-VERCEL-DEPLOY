@@ -21,7 +21,7 @@ const projectsData = [
     description: "Projeto de site de cadastro de portfolios de programadores, realizado com React, Next e Tailwind navegação por token.  ",
     image: "/images/projects/redesocial.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/jhonnycodedev/next-typescript-zustand-response",
+    gitUrl: "https://github.com/codeguima/next-typescript-zustand-response",
     previewUrl: "http://www.codedevs.com.br",
   },
   {
@@ -39,7 +39,7 @@ const projectsData = [
     description: "Projeto de um localizador de Barbearias para clientes, realizado com Kotlin, Android Studio",
     image: "/images/projects/barber.png",
     tag: ["All", "Mobile"],
-    gitUrl: "https://github.com/jhonnycodedev/AppBarber",
+    gitUrl: "https://github.com/codeguima/AppBarber",
     previewUrl: "/",
   },
   {
@@ -48,8 +48,8 @@ const projectsData = [
     description: "Operações de estacionamento, CRUD realizado com .Net Framework + SQLite no back, Angular-CLI + Bootstrap no front ",
     image: "/images/projects/estacionamento.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/jhonnycodedev/web-api-estacionamento",
-    previewUrl: "https://jhonnycodedev.github.io/angular-cli-bootstrap-typescript/",
+    gitUrl: "https://github.com/codeguima/web-api-estacionamento",
+    previewUrl: "https://codeguima.github.io/angular-cli-bootstrap-typescript/",
   },
   {
     id: 6,
@@ -57,8 +57,8 @@ const projectsData = [
     description: "Projeto bem básico feito em sala de aula apenas para testar as ferramentas de Web, PHP, CSS, HTML5.",
     image: "/images/projects/outlet.png",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/jhonnycodedev/oculos-outlet-basic-site",
-    previewUrl: "https://jhonnycodedev.github.io/oculos-outlet-basic-site/",
+    gitUrl: "https://github.com/codeguima/oculos-outlet-basic-site",
+    previewUrl: "https://codeguima.github.io/oculos-outlet-basic-site/",
   },
   {
     id: 7,
@@ -66,7 +66,7 @@ const projectsData = [
     description: "Projeto bem básico feito em sala de aula com material reciclável e Módulo ESP32 + MycroPython",
     image: "/images/projects/9.jpg",
     tag: ["All", "IoT"],
-    gitUrl: "https://github.com/jhonnycodedev/pet-feeder-iot-mycropython",
+    gitUrl: "https://github.com/codeguima/pet-feeder-iot-mycropython",
     previewUrl: "/images/projects/9.jpg",
   },
 
