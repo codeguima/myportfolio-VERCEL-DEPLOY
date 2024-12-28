@@ -10,15 +10,15 @@ dotenv.config();
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
     emailjs.init({
-      publicKey: process.env.EMAILJS_PUBLIC_KEY, // Chave pública
-      blockHeadless: true, // Bloquear navegadores headless
+      publicKey: process.env.EMAILJS_PUBLIC_KEY, 
+      blockHeadless: true, 
       blockList: {
-        list: ['foo@emailjs.com', 'bar@emailjs.com'], // Lista de e-mails bloqueados
+        list: ['foo@emailjs.com', 'bar@emailjs.com'],
         watchVariable: 'userEmail',
       },
       limitRate: {
         id: 'app',
-        throttle: 10000, // Limite de 1 requisição a cada 10 segundos
+        throttle: 10000, 
       },
     });
   }, []);
